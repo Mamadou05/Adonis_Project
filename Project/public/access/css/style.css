@@ -1,0 +1,81 @@
+nav{
+  width: 100%;
+  margin: 40px auto ;
+  position: sticky;
+
+  background-color: white;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  float: left;
+  background-color: #CCC;
+  font-weight: bold;
+  font-size: 30px;
+  width: 16%;/*100% divisé par le nombre d'éléments de menu*/
+  text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+
+nav ul::after{
+  content: "";
+  display: table;
+  /* /*clear: both;* */
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+nav a:hover{
+  color: white;
+  background-color: black;
+  border-bottom: 2px solid gold;
+}
+
+.image{
+  width: 150px;
+  margin: -20px;
+  border-bottom: 2px solid transparent;/*Eviter le décalage des éléments sous le menu à cause de la bordure en :hover*/
+  padding: -30px 0px;
+}
+
+/*Carousel*/
+.carousel-item{
+  height: 450px;
+}
+
+.d-block{
+  margin-top: 30px;
+}
+
+/*Card*/
+.card{
+  margin-top: 70px;
+}
+
+.card-title{
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*pied de page*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 75px;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
